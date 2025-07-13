@@ -32,7 +32,7 @@ export function Header() {
             <Link href="/" className="flex items-center absolute left-1/2 transform -translate-x-1/2 z-10">
               <div className="text-xl sm:text-2xl font-serif font-bold text-[var(--jsw-primary)] whitespace-nowrap">
                 <span className="hidden sm:inline">JSW Law Group</span>
-                <span className="sm:hidden">JSW Law</span>
+                <span className="sm:hidden">JSW Law Group</span>
               </div>
             </Link>
             
