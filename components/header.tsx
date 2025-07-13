@@ -30,17 +30,21 @@ export function Header() {
             </button>
             
             <Link href="/" className="flex items-center absolute left-1/2 transform -translate-x-1/2 z-10">
-              <div className="text-lg font-serif font-bold text-[var(--jsw-primary)] whitespace-nowrap">
-                JSW Law Group
+              <div className="text-xl sm:text-2xl font-serif font-bold text-[var(--jsw-primary)] whitespace-nowrap">
+                <span className="hidden sm:inline">JSW Law Group</span>
+                <span className="sm:hidden">JSW Law</span>
               </div>
             </Link>
             
             <Button 
               asChild
               size="sm"
-              className="bg-[var(--jsw-primary)] hover:bg-[var(--jsw-primary-dark)] text-white flex-shrink-0 text-xs px-3"
+              className="bg-[var(--jsw-primary)] hover:bg-[var(--jsw-primary-dark)] text-white flex-shrink-0 text-xs px-1.5 py-1"
             >
-              <Link href="/contact">Free Consultation</Link>
+              <Link href="/contact">
+                <span className="hidden sm:inline">Free Consultation</span>
+                <span className="sm:hidden">Free Consult</span>
+              </Link>
             </Button>
           </div>
 
