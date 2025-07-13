@@ -21,16 +21,16 @@ export function Header() {
           </Link>
 
           {/* Mobile/Tablet Layout */}
-          <div className="lg:hidden flex items-center justify-between w-full">
+          <div className="lg:hidden flex items-center justify-between w-full relative">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="p-2 rounded-md text-gray-700 hover:text-[var(--jsw-primary)] hover:bg-gray-100 transition-colors"
+              className="p-2 rounded-md text-gray-700 hover:text-[var(--jsw-primary)] hover:bg-gray-100 transition-colors flex-shrink-0"
             >
               {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </button>
             
-            <Link href="/" className="flex items-center absolute left-1/2 transform -translate-x-1/2">
-              <div className="text-xl font-serif font-bold text-[var(--jsw-primary)]">
+            <Link href="/" className="flex items-center absolute left-1/2 transform -translate-x-1/2 z-10">
+              <div className="text-lg font-serif font-bold text-[var(--jsw-primary)] whitespace-nowrap">
                 JSW Law Group
               </div>
             </Link>
@@ -38,7 +38,7 @@ export function Header() {
             <Button 
               asChild
               size="sm"
-              className="bg-[var(--jsw-primary)] hover:bg-[var(--jsw-primary-dark)] text-white"
+              className="bg-[var(--jsw-primary)] hover:bg-[var(--jsw-primary-dark)] text-white flex-shrink-0 text-xs px-3"
             >
               <Link href="/contact">Free Consultation</Link>
             </Button>
